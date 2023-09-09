@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Cadastro</title>
+	<meta charset="UTF8">
+	<link rel="shortcut icon" href="icon.png">
+</head>
+<body bgcolor="#181818">
+<font color="white">
+<fieldset>
+<legend>Cadastro</legend>
+	<form action="#" method="post">
+	<p>
+	<label for="signUpUser">Usuario:</label><br>
+	<input type="text" id="signUpUser" name="signUpUser" required="" autocomplete="off" size="40"/>
+	<p>
+
+	<p>
+	<label for="signUpEmail">E-mail:</label><br>
+	<input type="text" id="signUpEmail" name="signUpEmail" required="" autocomplite="off" size="40"/>
+	</p>
+
+	<p>
+	Homem: <input type="radio" name="userSex" value="0">
+	Mulher: <input type="radio" name="userSex" value="1">
+	</p>
+
+	<p>
+	<lebel for="useType">Tipo de uso:<label>
+	<select id="useType" name="useType">
+		<option value="P">Pessoal</option> 
+		<option value="E">Empresarial</option>
+	</select>
+	</p>
+
+	<p>
+	<label for="userBirthday">Data de nascimento</label><br>
+	<input type="date" id="userBirthday" name="userBirthday" required="">
+	</p>
+
+	<p>
+	Foto de perfil:
+	<input type="file" id="userPhoto" name="userPhoto">
+	</p>
+
+	<fieldset>
+	<legend>Captcha</legend>
+	<p>
+	você é um robo?
+	<input type="checkbox" id="captcha" name="captcha" required="">
+	</p>
+	</fieldset>
+	<br>
+
+	<center>
+		<input type="submit" id="sendSignUp" name="sendSignUp" value="Enviar">
+		<input type="reset" id="cleanFields" name="cleanFields" value="Limpar">
+	</center>
+	</form>
+</fieldset>
+</font>
+</body>
+</html>
