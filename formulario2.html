@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario 2</title>
+	<meta charset="UTF8">
+	<link rel="shortcut icon" href="icon.png">
+</head>
+<body bgcolor="#181818">
+<font color="white" size="4">
+<fieldset>
+<legend>Pedido Sorvete</legend>
+<form action="#" method="post">
+	<p>
+	<label for="clientName">Nome:</label>
+	<input type="text" id="clientName" name="clientName" maxlength="60" autocomplete="off" required="">
+	</p>
+
+	<p>
+	<label for="clientAddress">Endereço:</label><br>
+	<textarea type="text" id="clientAddress" name="clientAddress" row="3" autocomplete="off" required=""></textarea>
+	</p>
+	
+	<p>
+	<label for="clientPhone">Telefone para contato:</label>
+	<input type="number" id="clientPhone" name="clientPhone" autocomplete="off" required="">
+	</p>
+
+	<p>
+	<label for="flavorSelect">Selecione o Sabor</label>
+	<select id="flavorSelect" name="flavorSelect">
+		<option value="vanilla">Baunilha</option>
+		<option value="choco">Chocolate</option>
+		<option value="strawberry">Morango</option>
+	</select>	
+	</p>
+
+	<p>
+	<label for="icecreamSize">Tamanho:</label>
+	<input type="radio" id="icecreamSize" name="icecreamSize" autocomplete="off" value="500" checked> 500ML
+	<input type="radio" id="icecreamSize" name="icecreamSize" autocomplete="off" value="750"> 750ML
+	<input type="radio" id="icecreamSize" name="icecreamSize" autocomplete="off" value="1000"> 1L
+	</p>
+
+	<p>
+	confete(M&M):
+	<input type="checkbox" id="mm" name="mm" autocomplete="off">
+	</p>
+
+	<p>
+	<input type="submit" id="submitOrder" name="submitOrder" value="Realizar Pedido">
+	<input type="reset" id="cancelOrder" name="cancelOrder" value="Cancelar Pedido">
+	</p>
+</form>
+</fieldset>
+</font>
+	<br>
+	<a href="index.html"><button>Voltar</button></a>
+</body>
+</html>
