@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario 4</title>
+	<meta charset="UTF8">
+	<link rel="shortcut icon" href="icon.png">
+</head>
+<body bgcolor="#181818">
+<font color="white" size="4">
+<fieldset>
+<legend>Reserva de Hotel</legend>
+<form action="#" method="post">
+	<p>
+	<label for="guestName">Nome:</label>
+	<input type="text" id="guestName" name="guestName" maxlength="50" autocomplete="off" required="">
+	</p>
+
+	<p>
+	<label for="checkinDate">Data do Check-in:</label>
+	<input type="date" id="checkinDate" name="checkinDate" autocomplete="off" required="">
+	</p>
+
+	<p>
+	<label for="checkoutDate">Data do Check-out:</label>
+	<input type="date" id="checkoutDate" name="checkoutDate" autocomplete="off" required="">
+	</p>
+
+	<p>
+	<label for="roomType">Tipo de quarto:</label>
+	<select id="roomType" name="roomType">
+		<option value="SO">Solteiro</option>
+		<option value="CA">Casal</option>
+		<option value="FA">Familia</option>
+		<option value="QC">Quarto compartilhado</option>
+	</select>	
+	</p>
+
+	<p>
+	<label for="familyMembers">Se familia quantos membros:</label><br>
+	<input type="number" id="familyMembers" name="familyMembers" autocomplete="off">
+	</p>
+
+	<p>
+	<label for="hasSpecialRequest">Pedidos especiais:</label>
+	<input type="checkbox" id="hasSpecialRequest" name="hasSpecialRequest" autocomplete="off" value="1"><br>
+	<textarea type="text" id="specialRequest" name="specialRequest" autocomplete="off"></textarea>
+	</p>
+
+	<p>
+	<label for="includeMeals">Incluir Refeições:</label>
+	<input type="radio" id="includeMeals" name="includeMeals" autocomplete="off" value="0" checked>não
+	<input type="radio" id="includeMeals" name="includeMeals" autocomplete="off" value="1"> sim<br>
+	</p>
+
+	<p>
+	<input type="submit" id="send" name="send" value="Enviar Mensagem">
+	<input type="reset" id="cancel" name="cancel" value="Cancelar">
+	</p>
+</form>
+</fieldset>
+</font>
+	<br>
+	<a href="index.html"><button>Voltar</button></a>
+</body>
+</html>
