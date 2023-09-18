@@ -1,0 +1,22 @@
+body{
+    background-color: #181818;
+}
+
+p{
+    color: white;
+}
+
+p.codeBlock{
+    color: darkgreen;
+    background-color: darkslategray;
+}
+
+h2{
+    color: #FFEA00;
+    text-align: center;
+}
+
+
+h3{
+    color: "#FFEA00";
+}
