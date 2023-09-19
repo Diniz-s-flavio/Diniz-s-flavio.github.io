@@ -7,8 +7,11 @@ p{
 }
 
 p.codeBlock{
-    color: darkgreen;
-    background-color: darkslategray;
+    color: rgb(10, 134, 10);
+    background-color: rgb(14, 3, 34);
+}
+.commentBlock{
+    color: lightsteelblue;
 }
 
 h2{
@@ -19,4 +22,8 @@ h2{
 
 h3{
     color: "#FFEA00";
+}
+
+#externoStyle{
+    color: white;
 }
