@@ -1,7 +1,70 @@
 body{
     background-color: #181818;
+    margin: 0px;
 }
 
+/* Menu de Navegação*/
+
+.menuBar, .menuBar ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.menuBar{
+    background-color: #FFEA00;
+    padding: 0px 2rem;
+    justify-content: space-between;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.menuBar a {
+    text-decoration: none;
+}
+
+.menuBar .menuHomeButton{
+    color: black;
+    font-size: x-large;
+}
+
+.menuItens{
+    list-style: none;
+    padding: 0px;
+}
+
+.menuItens p {
+    color: black;
+}
+
+.menuItem{
+    padding: 0px 20px;
+}
+
+.menuItem:hover, 
+.menuItem:hover p,
+.menuBarButton:hover,
+.menuHomeButton:hover{
+    cursor: pointer;
+    background-color: #beaf00;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.menuBarButton{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 36px;
+    position: absolute;
+    right: 1rem;
+    top: .6rem;
+    display: none;
+}
+
+
+
+
+/* resto*/
 p{
     color: white;
 }
@@ -26,4 +89,49 @@ h3{
 
 #externoStyle{
     color: white;
+}
+
+.menuBarButton:focus ~ .menuItens, .menuItem{
+    height: 200px;
+}
+
+.menuBarButton:focus ~ .menuItem{
+    display: flex;
+}
+
+/* Menu de Navegação (Responsividade)*/
+@media (max-width:700px) {
+    .menuBar,
+    .menuBar ul{
+        flex-direction: column;
+    }
+
+    .menuItens{
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    .menuBar{
+        align-items: flex-start;
+        padding: 0;
+        padding-bottom: 5px;
+    }
+
+    .menuHomeButton{
+        margin: 10px;
+        padding-top: .75rem;
+    }
+
+    .menuBarButton{
+        display: flex;
+    }
+
+    .menuItem, .menuItens{
+        width: 100%;
+    }
+
+    .menuItem{
+        display: none;
+    }
 }
