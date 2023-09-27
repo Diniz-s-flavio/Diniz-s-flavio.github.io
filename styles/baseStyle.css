@@ -65,7 +65,7 @@ body{
 /* Menu de Navegação (Responsividade)*/
 @media (max-width: 768px) {
     .menuItens{
-        position: absolute;
+        position: fixed;
         top: 8vh;
         right: 0;
         width: 40vw;
@@ -75,11 +75,14 @@ body{
         align-items: center;
         justify-content: space-around;
         transform: translateX(100%);
+        z-index: 1;
+        transition: transform 0.3s ease-in-out;
     }
 
     .menuItem{
         margin-left: 0;
         opacity: 0;
+        transition: transform 0.3s ease-in-out;
     }
 
     .menuBarButton{
@@ -87,14 +90,13 @@ body{
     }
     
 
-    .menuBarButton:focus ~ 
-        .menuItens{
+    .menuBarButton:focus + .menuItens {
             transform: translateX(0);
-            
         }
+        /*.menuItens*/
         .menuItem{
             opacity: 100%;
-        } 
+        }
 }
 /*Defaults*/
 p{
@@ -114,6 +116,11 @@ main a:hover, #manualAngularImg:hover{
     color: #FCA311;
     background-color: #45454f;
     border-radius: 3px;
+}
+
+#manualAngularImgLink{
+    height: 52px;
+    width: 52px;
 }
 
 #manualAngularImg{
