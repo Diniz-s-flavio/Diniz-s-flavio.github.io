@@ -1,81 +1,94 @@
-body{
+/* Define que a margem padrão do corpo da página seja 0*/
+body {
     margin: 0;
 }
 
-ul{
-    list-style: none;
-    padding: 0;
-    overflow: hidden;
-    transition: all 3s;
+/* Remove marcadores de lista em elementos de lista não ordenada (ul) */
+ul {
+    list-style: none;/*list-style altera os estilos de lista, o none remover os marcadores de lista*/
+    padding: 0;/*padding controla o espaço interno de um elemento, o 0 remove esse espaço*/
+    overflow: hidden;/*overflow controla on que deve acontecer quando o conteudo transborda seu contêiner, o hidden esconde o que transbordar*/
+    transition: all 3s; /* Aplica uma transição suave de 3 segundos para todas as mudanças */
 }
 
-nav{
-    background-color: black;
-    padding: 0 20px;
-    justify-content: space-between;
-    align-items: center;
+/* Define estilos para a barra de navegação (nav) */
+nav {
+    background-color: black;/* background-color altera a cor de fundo de um elemento, black é a cor preta*/
+    padding: 0 20px; /* Adiciona preenchimento à barra de navegação nas laterais */
+    justify-content: space-between; /* Distribui o espaço entre os elementos filhos horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente dentro do contêiner */
 }
 
-h1, p{
-    color: white;
-}
-nav, ul{
-    display:  flex;
-    flex-direction: row;
+/* Define a cor do texto para cabeçalhos (h1) e parágrafos (p) como branco */
+h1, p {
+    color: white;/*o color altera a cor  de objetos, o white define a cor para branco*/
 }
 
-li{
-    padding: 0 20px;
+/* Define que os elementos nav e ul sejam exibidos em linha (horizontal) */
+nav, ul {
+    display: flex;/*ele se torna um contêiner flex, e seus elementos filhos podem ser organizados de maneira flexível dentro desse contêiner.*/
+    flex-direction: row; /* Define a direção dos itens flex como linha (horizontal) */
 }
 
-h1{
-    margin: 0;
-    padding: 10px;
+/* Define estilos para os itens de lista (li) */
+li {
+    padding: 0 20px; /* Adiciona preenchimento aos itens de lista nas laterais */
 }
 
-button{
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    font-size: 36px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    display: none;
+/* Define estilos para o cabeçalho (h1) */
+h1 {
+    margin: 0; /* Remove a margem padrão do cabeçalho */
+    padding: 10px; /* Adiciona preenchimento ao redor do cabeçalho */
 }
 
+/* Define estilos para o botão */
+button {
+    background-color: transparent; /* Define o plano de fundo do botão como transparente (sem cor de fundo) */
+    border: none; /* Remove a borda do botão */
+    color: #fff; /* Define a cor do texto do botão como branco */
+    font-size: 36px; /* Define o tamanho da fonte como 36 pixels */
+    position: absolute; /* Define a posição absoluta para que o botão possa ser posicionado com base em coordenadas */
+    right: 10px; /* Posiciona o botão 10 pixels à direita a partir da borda direita do seu contêiner pai */
+    top: 10px; /* Posiciona o botão 10 pixels abaixo da borda superior do seu contêiner pai */
+    display: none; /* Inicialmente, oculta o botão, de modo que não seja visível na página */
+}
+
+/* Define os estilos quando o mouse passa por cima (hover) de elementos li, h1 ou button */
 li:hover,
 h1:hover,
-button:hover{
-    cursor: pointer;
-    opacity: 0.8;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 30px;
-}
-button:focus ~ul{
-    height: 260px;
+button:hover {
+    cursor: pointer; /* Altera o cursor para uma mão ao passar por cima */
+    opacity: 0.8; /* Reduz a opacidade dos elementos para 80% */
+    background-color: rgba(255, 255, 255, 0.2); /* Aplica um fundo semi-transparente branco  usando uma cor rgb alfa*/
+    border-radius: 30px; /* Adiciona bordas arredondadas */
 }
 
-@media (max-width:768px) {
-    nav, ul{
-        flex-direction: column;
+/* Define o comportamento do elemento ul quando o botão está em foco (focus) */
+button:focus ~ ul {
+    height: 260px; /* Define a altura do elemento ul quando o botão está em foco */
+}
+
+/* Define estilos específicos quando a largura da tela é menor ou igual a 768px (uso de media query) */
+@media (max-width: 768px) {
+    nav, ul {
+        flex-direction: column; /* Altera a direção dos itens flex para coluna (vertical) */
     }
-    ul{
-        text-align: center;
-        margin: 0;
-        height: 0;
+    ul {
+        text-align: center; /* Centraliza o texto dentro do elemento ul */
+        margin: 0; /* Remove a margem padrão do elemento ul */
+        height: 0; /* Inicialmente, a altura do elemento ul é 0 (oculto) */
     }
-    nav{
-        padding-top: 0px;
-        align-items: flex-start;
+    nav {
+        padding-top: 0px; /* Remove o preenchimento superior da barra de navegação */
+        align-items: flex-start; /* Alinha os itens verticalmente ao topo */
     }
-    h1{
-        margin: 10px;
+    h1 {
+        margin: 10px; /* Adiciona margem ao redor do cabeçalho */
     }
-    button{
-        display: flex;
+    button {
+        display: flex; /* Exibe o botão */
     }
-    ul,li{
-        width: 100%;
+    ul, li {
+        width: 100%; /* Define a largura dos elementos ul e li como 100% */
     }
 }
