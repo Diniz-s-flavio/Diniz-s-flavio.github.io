@@ -28,35 +28,36 @@
     <main>
         <form class="cadastroUsuario">
 
-            <fieldset class="grupo">
+            <fieldset class="mainDataCadastroUsuario">
                 <div class="campo">
                     <label for="nome"><strong>Nome</strong></label>
-                    <input type="text" name="nome" id="nome" required>
+                    <input type="text" name="nome" id="nome" size="33" required>
                 </div>
 
                 <div class="campo">
                     <label for="email"><strong>Email</strong></label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email"  size="33" required>
                 </div>
 
                 <div class="campo">
                     <br>
                     <label for="keyword"><strong>Senha: </strong></label>
-                    <input type="password" id="keyword" name="keyword">
+                    <input type="password" id="keyword" name="keyword" size="33">
                 </div>
-                <div class="campo">
+                <div class="campo" id="campoConfirmKeyword">
                     <br>
                     <label for="confirmKeyword"><strong>Confirme a senha: </strong></label>
-                    <input type="password" id="confirmKeyword" name="confirmKeyword" size="15">
+                    <input type="password" id="confirmKeyword" name="confirmKeyword" size="25">
                 </div>
 
+            </fieldset> 
+
+            <fieldset class="grupo">
                 <div class="campo" id="campoBirthday">
                     <label for="idade"><strong>Data de nacimento</strong></label>
                     <input type="date" name="birthday" id="birthday" required>
                 </div>
-            </fieldset> 
 
-            <fieldset class="grupo">
                 <div id="campoUseTerms">
                     <label><strong>Você aceita os termos de uso:</strong></label>
                     <input type="checkbox" id="useTerms" name="useTerms" value="">

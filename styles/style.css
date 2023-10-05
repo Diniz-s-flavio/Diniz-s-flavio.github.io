@@ -181,7 +181,7 @@ h3{
     border-bottom-right-radius: 10px ;
     border: none;
     margin-left: 0;
-    font-size: 31px;
+    font-size: 20px;
     position: relative;
     right: 0;
 }
@@ -228,4 +228,5 @@ h3{
 
 #campoBirthday{
     margin-left: 110px;
+    padding-right: 0;
 }
