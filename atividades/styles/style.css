@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+:root{
+    --font-primary: 'Baloo Da 2', serif;
+    --font-secundary: "Josefin Slab", serif ;
+    --font-action: 'Mulish', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #23232E;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+/* Menu de Navegação*/
+.menuBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--font-primary);
+    font-size: 24px;
+    background-color: #FCA311;
+    height: 8vh;
+}
+
+.menuBar p{
+    color: black;
+}
+
+.menuBar a{ text-decoration: none;}
+
+.menuBar a:hover{
+    opacity: 0.7;
+}
+
+.menuBar .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.menuItens{
+    list-style: none;
+    display: flex;
+}
+
+.menuItem{
+    margin-left: 32px;
+}
+
+.menuBarButton{
+    cursor: pointer;
+    display: none;
+    background: #000;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+}
+
+/* Menu de Navegação (Responsividade)*/
+@media (max-width: 768px) {
+    .menuItens{
+        position: fixed;
+        top: 8vh;
+        right: 0;
+        width: 40vw;
+        height: 92vh;
+        background: #FCA311;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        z-index: 1;
+        transition: transform 1s ease-in-out;
+    }
+
+    .menuItem{
+        margin-left: 0;
+        opacity: 0;
+        transition: transform 1s ease-in-out;
+    }
+
+    .menuBarButton{
+        display: block;
+    }
+    
+
+    .menuBarButton:focus + .menuItens {
+            transform: translateX(0);
+        }
+        /*.menuItens*/
+        .menuItem{
+            opacity: 100%;
+        }
+}
+/*Defaults*/
+label,p{
+    color: #E5E5E5;
+    font-family: var(--font-secundary);
+}
+main{
+    margin-left: 10px;
+}
+main a{
+    text-decoration: none;
+    font-family: var(--font-action);
+    color: #E5E5E5;
+}
+
+main a:hover, #manualAngularImg:hover{
+    color: #FCA311;
+    background-color: #45454f;
+    border-radius: 3px;
+}
+
+#manualAngularImgLink{
+    height: 52px;
+    width: 52px;
+}
+
+#manualAngularImg{
+    height: 52px;
+    width: 52px;
+}
+
+#manualAngularImg img{
+    position: relative;
+    align-items: center;
+    top: 2px;
+    left: 2px;
+}
+p.codeBlock{
+    color: rgb(10, 134, 10);
+    background-color: rgb(14, 3, 34);
+}
+.commentBlock{
+    color: lightsteelblue;
+}
+
+h2{
+    color: #FFF;
+    text-align: center;
+}
+
+
+h3{
+    color: #FFF;
+}
+
+#externoStyle{
+    color: white;
+}
+/* Cadastro Usuario*/
+.cadastroUsuario fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.campo{
+    margin: 20px;
+    display: flex;
+}
+
+.campo label{
+    background-color: #FCA311;
+    color: #000;
+    padding: 10px;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+    margin-right: 0;
+}
+.campo input{
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+    border: none;
+    margin-left: 0;
+    font-size: 20px;
+    position: relative;
+    right: 0;
+}
+
+.campo #birthday{
+    font-size: 16px;
+}
+
+.campo #useTerms{
+    background-color: #fff;
+}
+
+.cadastroUsuario button{
+    border: none;
+    border-radius: 10px;
+    background-color: #FCA311;
+    font-family: var(--font-action);
+    font-size: 24px;
+    margin-left: 200px;
+    padding: 5px;
+}
+
+.cadastroUsuario button:hover{
+    color: #45454f;
+}
+
+#campoUseTerms{
+    margin: 20px;
+    margin-left: 130px;
+    display: flex;
+    justify-content: space-around;
+    width: 240px;
+    background-color: #fff;
+    padding: 5px;
+    align-content: center;
+    border-radius: 5px;
+
+}
+
+#campoUseTerms label{
+    color: #000;
+    margin: 10px 5px;
+}
+
+#campoBirthday{
+    margin-left: 110px;
+    padding-right: 0;
+}
