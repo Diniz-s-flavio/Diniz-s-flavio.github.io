@@ -230,3 +230,9 @@ h3{
     margin-left: 110px;
     padding-right: 0;
 }
+
+/*Calculadora de Combustivel*/
+
+#imagemGas {
+    width: 100px;
+}
