@@ -38,15 +38,21 @@
             </a></li>
         </ul>
     </nav>
-    <main>
+    <main id="FuelCalculator">
         <h2>Calcular Combustível</h2>
-        <img src="imagens/normal.png" id="imagemGas">
-        <form name="frdados">
-            <input type="text" name="txetanol" size="10" placeholder="Etanol" autofocus autocomplete="off">
-            <input type="text" name="txgasolina" size="10" placeholder="Gosolina" autocomplete="off">
-            <input type="button" value="Calcular" onclick="melhor()">
-            <input type="reset" value="Limpar" onclick="limpar()">
-        </form>
+        <div id="bestFuelCalculator">
+            <img src="imagens/normal.png" id="imagemGas" title="Não Calculado">
+            <form name="frdados" id="frdados">
+                <div id="calcFields">
+                    <input type="text" name="txetanol" size="10" placeholder="Etanol" autofocus autocomplete="off">
+                    <input type="text" name="txgasolina" size="10" placeholder="Gosolina" autocomplete="off">
+                </div>
+                <div id="calcButtons">
+                    <input type="button" value="Calcular" onclick="melhor()">
+                    <input type="reset" value="Limpar" onclick="limpar()">
+                </div>
+            </form>
+        </div>
     </main>    
 </body>
 </html>

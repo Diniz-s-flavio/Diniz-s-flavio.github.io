@@ -26,6 +26,7 @@ body{
     font-size: 24px;
     background-color: #FCA311;
     height: 8vh;
+    margin-bottom: 20px;
 }
 
 .menuBar p{
@@ -233,6 +234,52 @@ h3{
 
 /*Calculadora de Combustivel*/
 
+#FuelCalculator{
+    display: flex;
+    flex-direction: column;
+}
+
 #imagemGas {
     width: 100px;
+}
+
+#bestFuelCalculator{
+    align-self: center;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bestFuelCalculator #calcButtons{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#bestFuelCalculator #calcButtons input{
+    background-color: #FCA311;
+    border: none;
+    height: 30px;
+    width: 70px;
+    border-radius: 10px;
+}
+
+#bestFuelCalculator #calcFields input{
+    padding: 5px;
+    border: none;
+    height: 20px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+#bestFuelCalculator img{
+    margin-bottom: 10px;
+}
+
+#frdados{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
