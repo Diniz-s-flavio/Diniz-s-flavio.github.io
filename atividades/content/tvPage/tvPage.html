@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0" />
+        <link rel="shortcut icon" href="../../icon.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../../styles/style.css">
+        <title>TV JS</title>
+</head>
+<body>
+    <nav class="menuBar">
+        <div>
+            <a href="../../activityIndex.html">
+                <strong>
+                    <p class="menuHomeButton">Flávio Diniz</p>
+                </strong>
+            </a>
+        </div>
+        <button class="menuBarButton">
+            <p>&#9776;</p>
+        </button>
+        <ul class="menuItens">
+            <li class="menuItem"><a href="uglyIndex.html">
+                <p>Index Pre CSS</p>
+            </a></li>
+            <li class="menuItem"><a href="manualAngular.html">
+                <p>Angular</p>
+            </a></li>
+            <li class="menuItem"><a href="listas.html">
+                <p>Listas</p>
+            </a></li>
+            <li class="menuItem"><a href="/content/forms/formCadastro.html">
+                <p>Cadastrar</p>
+            </a></li>
+            <li class="menuItem"><a href="../index.html">
+                <p>Projeto</p>
+            </a></li>
+        </ul>
+    </nav>
+
+    <div class="tvBox">
+        <div class="tvScreen">
+            <img id="tvImg" src="../../images/tvImgs/tvOff.png">
+        </div>
+
+        <div class="tvControl">
+            <div class="tvDisplay">
+                <h3>Canal: <span id="canal">1</span></h3>
+                <h3>Volume: <span id="volume">10</span></h3>
+            </div>
+            <div class="tvButtons">
+                <button class="button" id="tvPower"></button>
+                <button class="button" id="changeChannel">Alternar Canal</button>
+                <button class="button" id="volMinus">Vol -</button>
+                <button class="button" id="volPlus">Vol +</button>
+            </div>
+        </div>
+    </div>
+    <script src="tvControl.js"> </script>
+    <script src="../../../js/menuScript.js"> </script>
+</body>
+</html>
