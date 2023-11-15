@@ -7,6 +7,7 @@
     height: 400px;
     margin-left: 20%;
     border-radius: 10px;
+    margin-top: 5%;
 }
 
 .tvScreen{
@@ -55,4 +56,8 @@
 .tvButtons button:hover{
     color: red;
     background-color: #252222;
+}
+
+.tvDisplay {
+    color: white;
 }
